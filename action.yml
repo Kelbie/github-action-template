@@ -1,10 +1,13 @@
 name: 'Kevin Hello'
 description: 'Simple Hello World Github Action'
 author: 'kevin@kelbie.me'
-inputs:
-  my_input:
-    description: 'input description here'
-    default: 'World'
+inputs: 
+  message:
+    description: 'Message that should be printed in the pull request'
+    required: true
+  GITHUB_TOKEN:
+    description: 'Github token of the repository (automatically created by Github)'
+    required: true
 runs:
   using: 'node12'
   main: 'dist/index.js'
