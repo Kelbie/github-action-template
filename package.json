@@ -1,36 +1,39 @@
 {
-  "name": "kevin-hello",
-  "version": "0.0.0",
-  "private": true,
-  "description": "TypeScript template action",
-  "main": "lib/index.js",
+  "name": "actions-comment-pull-request",
+  "version": "1.0.0",
+  "description": "GitHub action for commenting pull-request",
+  "main": "lib/main.js",
   "scripts": {
     "build": "tsc",
-    "format": "prettier --write **/*.ts",
-    "format-check": "prettier --check **/*.ts",
-    "pack": "ncc build"
+    "format": "prettier --write **/*.ts"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/notiz-dev/github-action-template"
+    "url": "git+https://github.com/thollander/actions-comment-pull-request"
   },
   "keywords": [
     "actions",
-    "node",
-    "setup",
-    "typescript",
-    "GitHub"
+    "container",
+    "pull-request",
+    "comment",
+    "message"
   ],
-  "author": "notiz.dev",
+  "author": "Térence Hollander",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thollander/actions-comment-pull-request/issues"
+  },
+  "homepage": "https://github.com/thollander/actions-comment-pull-request#readme",
   "dependencies": {
-    "@actions/core": "^1.2.0",
-    "@actions/github": "^2.1.1"
+    "@actions/core": "^1.0.0",
+    "@actions/io": "^1.0.0",
+    "@actions/exec": "^1.0.0",
+    "@actions/github": "^1.0.0",
+    "@actions/tool-cache": "^1.0.0"
   },
   "devDependencies": {
-    "@types/node": "^12.7.12",
-    "@zeit/ncc": "^0.20.5",
-    "prettier": "^1.19.1",
-    "typescript": "3.8.3"
+    "@types/node": "^12.0.4",
+    "prettier": "^1.17.1",
+    "typescript": "^3.5.1"
   }
 }
