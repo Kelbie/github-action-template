@@ -1,6 +1,6 @@
-name: 'Github Action Template'
-description: 'simple typescript template for building GitHub Actions'
-author: 'notiz.dev'
+name: 'Kevin Hello'
+description: 'Simple Hello World Github Action'
+author: 'kevin@kelbie.me'
 inputs:
   my_input:
     description: 'input description here'
