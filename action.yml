@@ -11,6 +11,9 @@ inputs:
 runs:
   using: 'node12'
   main: 'dist/index.js'
+  args:
+    - ${{ inputs.message }}
+    - ${{ inputs.GITHUB_TOKEN }}
 branding:
   color: "yellow"
   icon: "bell"  
